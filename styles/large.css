@@ -1,0 +1,65 @@
+/* large.css - styles for larger screens */
+
+@media (min-width: 320px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  #menu {
+    display: none; /* hide hamburger on large screens */
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    background-color: #004466;
+  }
+
+  nav a {
+    border: none;
+    padding: 1rem;
+  }
+
+  nav a:hover {
+    background-color: #006699;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  section {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+ /* Footer social icons */
+footer div {
+  display: flex;
+  justify-content:center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #006699;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+  background-color: #004466;
+}
+}

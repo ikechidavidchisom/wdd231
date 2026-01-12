@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD 231 Home Page">
+  <meta name="author" content="David">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 | Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpg" alt="Site Logo">
+    <span>David</span>
+    <button id="menu" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="chamber/index.html">Chamber Project</a>
+    <a href="final/index.html">Final Project</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>Certificate Courses</h2>
+      <div id="courses"></div>
+      <div id="credits"></div>
+      <div>
+        <button id="allBtn">All Courses</button>
+        <button id="wddBtn">WDD Courses</button>
+        <button id="cseBtn">CSE Courses</button>
+      </div>
+    </section>
+    <section>
+      <h2>About Me</h2>
+        <p>
+            Hi, my name is David and I’m a student of web development based in Aba, Abia State, Nigeria. 
+            I enjoy learning how to design and build responsive websites that adapt beautifully across 
+            devices. My focus is on creating clean, accessible, and user-friendly interfaces using HTML, 
+            CSS, and JavaScript. 
+        </p>
+        <p>
+            Beyond coding, I’m passionate about problem-solving and continuous learning. I believe that 
+            technology can empower people and communities, and I’m excited to contribute to projects that 
+            make a positive impact. This portfolio showcases my coursework and projects from WDD231, 
+            including the Chamber of Commerce site and my final project.
+        </p>
+    </section>
+
+
+    <!-- Student Photo --> 
+    <section> 
+      <h2>Student Photo</h2> 
+      <img src="images/student-photo.jpg" alt="Student Photo" style="max-width:200px;"> 
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/yourgithubusername" target="_blank">
+        <img src="images/github.png" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://twitter.com/yourprofile" target="_blank">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+    </div>
+    <p>&copy; <span id="year"></span> David • Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
