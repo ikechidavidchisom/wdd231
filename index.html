@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Course Home Page for WDD 231">
-  <meta name="author" content="David">
+  <meta name="description" content="David's WDD 231 course homepage showcasing assignments, projects, and web development skills.">
+  <meta name="author" content="David Chisom Ikechi">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 231 | Home</title>
+
+<!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- Normalize (optional) -->
   <link rel="stylesheet" href="styles/normalize.css">
@@ -23,10 +28,10 @@
   <header>
     <img src="images/logo.svg" alt="Site Logo">
     <span>Ikechi David Chisom</span>
-    <button id="menuButton">☰</button>
+    <button id="menuButton" aria-label="Menu">☰</button>
   </header>
 
-  <nav id="primaryNav">
+  <nav id="primaryNav" class="hidden">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="chamber/index.html">Chamber</a></li>
