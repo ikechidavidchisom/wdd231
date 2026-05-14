@@ -17,6 +17,10 @@ header, nav, main, footer {
   padding: 1rem;
 }
 
+.logo {
+  max-width: 200px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
