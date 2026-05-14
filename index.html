@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Course Home Page for WDD 231">
+  <meta name="author" content="David">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 | Home</title>
+
+  <!-- Normalize (optional) -->
+  <link rel="stylesheet" href="styles/normalize.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript files -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+  <header>
+    <img src="images/logo.svg" alt="Site Logo">
+    <span>Ikechi David Chisom</span>
+    <button id="menuButton">☰</button>
+  </header>
+
+  <nav id="primaryNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final/index.html">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>About Me</h2>
+        <p>
+            Hi, my name is David and I’m a student of web development based in Aba, Abia State, Nigeria. 
+            I enjoy learning how to design and build responsive websites that adapt beautifully across 
+            devices. My focus is on creating clean, accessible, and user-friendly interfaces using HTML, 
+            CSS, and JavaScript. 
+        </p>
+        <p>
+            Beyond coding, I’m passionate about problem-solving and continuous learning. I believe that 
+            technology can empower people and communities, and I’m excited to contribute to projects that 
+            make a positive impact. This portfolio showcases my coursework and projects from WDD231, 
+            including the Chamber of Commerce site and my final project.
+        </p>
+    </section>
+    <section>
+      <h2>Certificate Courses</h2>
+      <div id="courseCards"></div>
+      <p>Total Credits: <span id="totalCredits"></span></p>
+      <button id="allCoursesBtn">All Courses</button>
+      <button id="wddCoursesBtn">WDD Courses</button>
+      <button id="cseCoursesBtn">CSE Courses</button>
+    </section>
+    <section>
+      <!-- Student Photo --> 
+    <section> 
+      <h2>Student Photo</h2> 
+      <img src="images/student-photo.jpg" alt="Student Photo" style="max-width:200px;"> 
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://ikechidavidchisom.github.io/wdd231" target="_blank">
+        <img src="images/github.png" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/ikechidavid" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://twitter.com/ikechidavid" target="_blank">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+
+    </div>
+    <p>&copy; <span id="year"></span> David | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
