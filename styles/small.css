@@ -1,6 +1,6 @@
 :root {
   --primary-color: #2c3e50;   /* dark blue-gray */
-  --secondary-color: #111383; /* red accent */
+  --secondary-color: #0d47a1; /* blue accent */
   --background-color: #f4f4f4;
   --text-color: #333;
 }
@@ -89,7 +89,7 @@ button {
 }
 
 #cseCoursesBtn {
-  background-color: #045c29; /* green accent */
+  background-color: #013b19; /* green accent */
   color: white;
 }
 
