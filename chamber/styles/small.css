@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004466;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* Branding block */
+.branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.branding img {
+  max-width: 50px;
+  height: auto;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Mobile defaults */
+nav ul {
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  background: #004466;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  transition: max-height 0.4s ease-out;
+}
+
+nav ul.open {
+  display: flex;
+  max-height: 500px;
+  padding: 0.5rem;
+}
+
+.view-toggle {
+  text-align: center;
+  margin: 1rem;
+}
+
+/* Grid view */
+.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* List view */
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+.hero {
+  margin-top: 1rem; /* creates breathing space */
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto; /* lets it shrink naturally */
+  object-fit: cover;
+}
+
+
+/* Mobile default */
+.hero-text {
+  position: relative;
+  transform: none;
+  padding: 1rem;
+  background: rgba(0,0,0,0.5); /* optional for readability */
+  color: white;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #004466;
+  color: white;
+}
+
+.btn-secondary {
+  background: rgb(255, 255, 255);
+  color: #004466;
+  border: 2px solid #004466;
+}
+
+footer {
+    font-size: 1rem;
+}

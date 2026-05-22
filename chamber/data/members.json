@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Easyway Solutions",
+    "address": "11 Nwala St, Aba",
+    "phone": "08137544197",
+    "website": "https://easywaysol.com",
+    "image": "easyway.png",
+    "membership": "Gold"
+  },
+  {
+    "name": "Webdeeve",
+    "address": "45 Azikiwe Rd Aba",
+    "phone": "08134296743",
+    "website": "https://webdeeve.com",
+    "image": "webdeeve.png",
+    "membership": "Silver"
+  },
+  {
+    "name": "Oracle-Dondave Farms",
+    "address": "Km1 Umuoha, Aba",
+    "phone": "0903581209",
+    "website": "https://oracledondavefarms.com",
+    "image": "oracle.svg",
+    "membership": "Member"
+  },
+  {
+    "name": "Bobos Fitness",
+    "address": "101 Aba-Owerri Rd, Aba",
+    "phone": "07081348650",
+    "website": "https://bobosfitness.com",
+    "image": "bobos.png",
+    "membership": "Gold"
+  },
+  {
+    "name": "Trendid Academy",
+    "address": "2B Pound Rd. Aba",
+    "phone": "08138907689",
+    "website": "https://trendidacademy.com",
+    "image": "trendid.png",
+    "membership": "Silver"
+  },
+  {
+    "name": "Happy Bells Restruarants",
+    "address": "18 Abayi Str, Aba",
+    "phone": "09127865430",
+    "website": "https://happybells.com",
+    "image": "bells.png",
+    "membership": "Member"
+  },
+  {
+    "name": "Peace Mass Transit",
+    "address": "75 factory Rd., Aba",
+    "phone": "08135678965",
+    "website": "https://pmt.com",
+    "image": "peace.png",
+    "membership": "Gold"
+  }
+]
