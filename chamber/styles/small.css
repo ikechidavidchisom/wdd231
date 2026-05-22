@@ -126,8 +126,8 @@ nav ul.open {
   margin-bottom: 1rem;
 }
 
-.hero-buttons .btn-primary,
-.hero-buttons .btn-secondary {
+.hero-buttons .join-btn,
+.hero-buttons .explore-btn {
   padding: 0.5rem 1rem;
   margin: 1rem;
   text-decoration: none;
@@ -135,16 +135,34 @@ nav ul.open {
   display: inline-block;
 }
 
-.btn-primary {
+/* Primary button */
+.join-btn {
   background: #004466;
-  color: white;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+.join-btn:hover {
+  background: #006699;
 }
 
-.btn-secondary {
-  background: rgb(255, 255, 255);
+/* Secondary button */
+.explore-btn {
+  background: #eee;
   color: #004466;
-  border: 2px solid #004466;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s ease;
 }
+.explore-btn:hover {
+  background: #ddd;
+}
+
 
 footer {
     font-size: 1rem;
