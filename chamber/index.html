@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Aba City Chamber of Commerce - Connecting Business & Community.">
+  <meta name="author" content="Ikechi David Chisom">
+  <title>Home - Aba City Chamber of Commerce</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="Site Logo">
+      <span>Aba City Chamber of Commerce</span>
+    </div>
+
+    <nav id="primaryNav">
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join Us Now</a></li>
+        <li><a href="directory.html">Explore Directory</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Aba City Chamber of Commerce" class="hero-img">
+      <div class="hero-text">
+        <h1>Welcome to Aba City Chamber of Commerce</h1>
+        <p>Connecting Business & Community for a Better Life</p>
+        <a href="join.html" class="cta-btn">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current Events -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Networking Breakfast – June 5</li>
+        <li>Business Exposure – June 20</li>
+        <li>Community Clean-Up – July 1</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather">
+      <h2>Local Weather</h2>
+      <p>Current Temperature: <span id="current-temp"></span></p>
+      <p>Conditions: <span id="weather-desc"></span></p>
+      <div id="forecast">
+        <p>Day 1: <span id="day1"></span></p>
+        <p>Day 2: <span id="day2"></span></p>
+        <p>Day 3: <span id="day3"></span></p>
+      </div>
+    </section>
+
+    <!-- Company Spotlights -->
+    <section id="spotlights">
+      <h2>Member Spotlights</h2>
+      <!-- Cards injected by spotlights.js -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: ikechidavid62@gmail.com | Phone: +2348138907538</p>
+    <p>Developed by Ikechi David Chisom | WDD 231</p>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
