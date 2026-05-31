@@ -1,17 +1,20 @@
 /* large.css */
 @media (min-width: 768px) {
   header {
+    display:flex;
     flex-direction: row;       /* side by side */
     justify-content: space-between;
     align-items: center;
   }
 
  main {
-    display:block;
+    display:flex;
     justify-content: space-between;
+    flex-direction: column;
   }
-  
-  .branding {
+
+.branding {
+    display:flex;
     flex-direction: row;
     gap: 1rem;
   }
@@ -26,6 +29,7 @@
     gap: 1rem;
     max-height: none;
     transition: none;
+    color: #fff;
   }
   
   .hero-img {
@@ -44,3 +48,18 @@
 section {
     flex: 1;
   }
+
+ 
+
+  form {
+    flex: 2;
+  }
+
+  .membership-cards {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+}

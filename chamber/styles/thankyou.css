@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  max-width: 60%;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 1rem;
+  margin: auto;
+  
+}
+
+.thankyou {
+  text-align: center;
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #000;
+}
+
+.thankyou h1 {
+  color: #033b5c;
+  margin-bottom: 1rem;
+}
+
+.submitted-info {
+  text-align: left;
+  margin: 1.5rem auto;
+  max-width: 400px;
+}
+
+.submitted-info p {
+  background: #e6f2f5;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #025981;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #580101;
+}

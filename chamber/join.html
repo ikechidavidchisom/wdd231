@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Aba City Chamber of Commerce - Connecting Business & Community.">
+  <meta name="author" content="Ikechi David Chisom">
+  <title>Join - Aba City Chamber of Commerce</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/join-small.css">
+  <link rel="stylesheet" href="styles/join-large.css">
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+<body>
+  <header>
+   <div class="branding">
+    <a href="index.html">
+    <img src="images/logo.svg" alt="Site Logo">
+    <span>Aba City Chamber of Commerce</span>
+  </a>
+</div>
+
+    <nav id="primaryNav">
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join Us Now</a></li>
+        <li><a href="directory.html">Explore Directory</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <section class="join">
+  <h1>
+    <span class="title-box">Join</span>
+    <a href="index.html" class="link-box home">Home</a>
+    <a href="discover.html" class="link-box discover">Discover</a>
+    <a href="join.html" class="link-box join-now">Join Us Now</a>
+    <a href="directory.html" class="link-box directory">Explore Directory</a>
+  </h1>
+</section>
+
+
+
+    <section class="join-layout">
+        <section >
+        <h2>Membership Application Form</h2>
+        <form method="get" action="thankyou.html">
+        <label>
+            First Name:
+            <input id="firstName" type="text" name="firstName" title="First Name" placeholder="Type your first name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+            Last Name:
+            <input type="text" name="lastName" title="Last Name" placeholder="Type your last name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+            Organizational Title:
+            <input type="text" name="orgTitle" title="Organization Title" placeholder="What is the title of your organization?" autocomplete="organization-title"
+                pattern="[A-Za-z\\-\\s]{7,}">
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" title="Email" placeholder="example@email.com" autocomplete="email"  required>
+        </label>
+
+        <label>
+            Mobile Phone:
+            <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" placeholder="e.g 08012345678" inputmode="tel" pattern="[0-9]{10,15}" required>
+        </label>
+
+        <label>
+            Organization Name:
+            <input type="text" name="organization" title="Organization" placeholder="What is the name of your organization?" autocomplete="organization" required>
+        </label>
+
+        <label>
+            Membership Level:
+            <select name="membership" required>
+            <option value="np">NP Membership (Non-Profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+            </select>
+        </label>
+
+        <label>
+            Organization Description:
+            <textarea name="description" title="Organization Description" placeholder="Brief description of your organization" ></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Application">
+        </form>
+        </section>
+
+        <!-- Membership cards -->
+        <section class="membership-cards">
+        <h2>Membership Levels</h2>
+        <div class="card">
+            <h3>NP Membership</h3>
+            <a href="#npModal">Learn More</a>
+        </div>
+        <div class="card">
+            <h3>Bronze Membership</h3>
+            <a href="#bronzeModal">Learn More</a>
+        </div>
+        <div class="card">
+            <h3>Silver Membership</h3>
+            <a href="#silverModal">Learn More</a>
+        </div>
+        <div class="card">
+            <h3>Gold Membership</h3>
+            <a href="#goldModal">Learn More</a>
+        </div>
+        </section>
+    </section>
+
+    <!-- Modals -->
+    <dialog id="npModal">
+      <h4>NP Membership Benefits</h4>
+      <p>No fee, access to networking events, community support.</p>
+      <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="bronzeModal">
+      <h4>Bronze Membership Benefits</h4>
+      <p>Basic training sessions, event discounts, directory listing.</p>
+      <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="silverModal">
+      <h4>Silver Membership Benefits</h4>
+      <p>Advertising opportunities, spotlight positions, extended discounts.</p>
+      <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="goldModal">
+      <h4>Gold Membership Benefits</h4>
+      <p>Premium events, full advertising package, maximum discounts.</p>
+      <button class="close">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:ikechidavid62@gmail.com">ikechidavid62@gmail.com</a> | 
+        Phone: <a href="tel:+2348138907538">+2348138907538</a></p>
+    <p>Developed by Ikechi David Chisom | WDD 231</p>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

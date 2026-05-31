@@ -1,0 +1,144 @@
+/* large.css */
+@media (min-width: 768px) {
+  header {
+    display:flex;
+    flex-direction: row;       /* side by side */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ main {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  
+
+ .join-layout {
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .join h1 {
+  display: flex;              /* put everything on one line */
+  justify-content: center;    /* center horizontally */
+  flex-wrap: wrap;            /* allow wrapping on smaller screens */
+  gap: 0rem;                  /* spacing between boxes */
+  margin: 1rem 0;
+  
+}
+
+.title-box {
+  background: none;        /* deep blue for Join */
+  color: #0f0f0f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.link-box {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.link-box:hover {
+  cursor: pointer;
+  background: #336da8;
+  transform: translateY(-3px);
+  
+}
+
+/* Different color contrasts */
+.link-box.home {
+  background: #042c55;   /* red */
+}
+
+.link-box.home:hover {
+  background: #4469ad;   /* lighter blue */
+}
+
+.link-box.discover {
+  background: #042c55;   /* lighter blue */
+}
+
+.link-box.discover:hover {
+  background: #4469ad;   /* lighter blue */
+}
+
+.link-box.join-now {
+  background: #042c55;   /* green */
+}
+
+.link-box.join-now:hover {
+  background: #4469ad;   /* lighter blue */
+}
+
+.link-box.directory {
+  background: #042c55;   /* orange */
+}
+
+.link-box.directory:hover {
+  background: #4469ad;   /* lighter blue */
+}
+
+.branding {
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .menu-toggle {
+    display: none;             /* hide hamburger */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    max-height: none;
+    transition: none;
+    color: #fff;
+  }
+  
+  .hero-img {
+    height: 500px;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+}
+
+section {
+    flex: 1;
+  }
+
+ 
+
+  form {
+    flex: 2;
+  }
+
+  .membership-cards {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+}
