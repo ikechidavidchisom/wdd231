@@ -40,7 +40,6 @@
 
   .link-box {
     display: inline-block;
-    padding: auto;
     border-radius: 0;
     text-decoration: none;
     font-size: 1rem;
@@ -64,7 +63,7 @@
   .link-box.join-now {
   background: #4469ad;
   }
-  
+
   .link-box.home:hover,
   .link-box.discover:hover,
   .link-box.directory:hover {
