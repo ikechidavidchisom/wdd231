@@ -1,4 +1,4 @@
-* Reset & Base */
+/* ===== Reset & Base ===== */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -10,9 +10,8 @@ header {
   align-items: center;
   background: #004466;
   color: #fff;
-  padding: 1rem 2rem;   /* more breathing room */
-  border-bottom: 6px solid #3841bd; /* accent line for neat separation */
-  transition: none;
+  padding: 1rem;
+  border-bottom: 6px solid #3841bd;
 }
 
 .branding {
@@ -22,7 +21,7 @@ header {
 }
 
 .branding img {
-  height: 45px;         /* slightly larger logo for balance */
+  height: 45px;
 }
 
 .branding span {
@@ -30,13 +29,10 @@ header {
   font-size: 1.25rem;
 }
 
-
-/* Navigation */
+/* ===== Navigation ===== */
 .menu-toggle {
-  position: relative;
   background: none;
   border: none;
-  border-radius: 4px;
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
@@ -46,24 +42,13 @@ header {
 
 nav ul {
   max-height: 0;
-  overflow:auto;
-  flex-direction:column;
-  background:none;
+  overflow: hidden;
+  flex-direction: column;
+  background: #004466;
   padding: 0;
   margin: 0;
   font-size: 1rem;
-  color: #fff;
   transition: max-height 0.4s ease-out;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  background:#0066cc
 }
 
 nav ul.open {
@@ -71,72 +56,65 @@ nav ul.open {
   max-height: 500px;
   padding: 0.5rem;
 }
-h1 {
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem;
   display: block;
-  gap: 2rem;
+}
+
+nav a:hover {
+  background: #0066cc;
+}
+
+/* ===== Headings ===== */
+h1 {
   padding: 1rem;
+  font-size: 1.5rem;
+}
+
+
+/* Breadcrumb links */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.breadcrumb .link-box {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  background: #042c55;
+  transition: transform 0.3s ease;
+}
+
+.breadcrumb .link-box:hover {
+  background: #4469ad;
+  transform: translateY(-3px);
+}
+
+.link-box.join-now {
+  background: #4469ad;
   }
 
+/* ===== Main Layout ===== */
 main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 1rem;
 }
 
-.link-box {
-  display: none;
-  padding: 0.75rem 1.5rem;
-  width: auto;
-  border-radius: 0;
-  text-decoration: none;
-  font-size: 1rem;
-  color: #fff;
-  transition: transform 0.3s ease;
-}
-
-.link-box:hover {
-  cursor: pointer;
-  background: #336da8;
-  transform: translateY(-3px);
-  
-}
-
-/* Different color contrasts */
-.link-box.home {
-  background: #042c55;   /* red */
-}
-
-.link-box.home:hover {
-  background: #4469ad;   /* lighter blue */
-}
-
-.link-box.discover {
-  background: #042c55;   /* lighter blue */
-}
-
-.link-box.discover:hover {
-  background: #4469ad;   /* lighter blue */
-}
-
-.link-box.join-now {
-  background: #042c55;   /* green */
-}
-
-.link-box.join-now:hover {
-  background: #4469ad;   /* lighter blue */
-}
-
-.link-box.directory {
-  background: #042c55;   /* orange */
-}
-
-.link-box.directory:hover {
-  background: #4469ad;   /* lighter blue */
-}
-
-/* ===== Base Styles (apply to all screen sizes) ===== */
+/* ===== Form ===== */
 form {
-  max-width: 600px;
+  width: 95%;
   margin: 1rem auto;
   padding: 1rem;
   background: #f9f9f9;
@@ -146,10 +124,13 @@ form {
 
 form label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-weight: 600;
 }
-form input:focus, form select:focus, form textarea:focus {
+
+form input:focus,
+form select:focus,
+form textarea:focus {
   outline: 2px solid #004080;
   outline-offset: 2px;
 }
@@ -180,10 +161,10 @@ form input[type="submit"]:hover {
   background: #2e7fcf;
 }
 
-/* Membership cards */
+/* ===== Membership Cards ===== */
 .membership-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
   margin: 2rem 0;
 }
@@ -194,42 +175,19 @@ form input[type="submit"]:hover {
   border-radius: 6px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 4px #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   opacity: 0;
-  animation: fadeInUp 2s ease forwards;
+  animation: fadeInUp 1s ease forwards;
 }
 
-/* Animation for cards */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-
-/* Staggered animation for each card */
-.membership-cards .card:nth-child(1) {
-  animation-delay: 0.5s;
-}
-.membership-cards .card:nth-child(2) {
-  animation-delay: 1s;
-}
-.membership-cards .card:nth-child(3) {
-  animation-delay: 1.5s;
-}
-.membership-cards .card:nth-child(4) {
-  animation-delay: 2s;
-}
-
-/* Hover effect for interactivity */
 .membership-cards .card:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 6px 12px #000;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -247,11 +205,11 @@ form input[type="submit"]:hover {
 }
 
 .card a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
   color: #960518;
 }
 
-/* Modals */
+/* ===== Modals ===== */
 dialog {
   border: none;
   border-radius: 6px;
@@ -278,29 +236,14 @@ dialog button.close {
   cursor: pointer;
 }
 
-
-/* ===== Small Screen Styles (phones, tablets under 768px) ===== */
-@media (max-width: 767px) {
-  .membership-cards {
-    flex-direction: column;
-  }
-
-  .card {
-    flex: 1 1 100%;
-  }
-
-  form {
-    width: 95%;
-  }
-}
-
+/* ===== Footer ===== */
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
   background: #004466;
-  color: white;
+  color: #fff;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 1rem;
 }
