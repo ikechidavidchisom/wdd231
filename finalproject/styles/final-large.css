@@ -1,0 +1,147 @@
+/* DESKTOP
+   769px and above
+*/
+
+@media (min-width:769px){
+
+.hamburger {
+display: none;
+}
+
+.hero{
+
+    min-height:90vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    align-items:center;
+    padding:6rem 8%;
+}
+
+.hero h1{
+
+    font-size:4.5rem;
+    line-height:1.1;
+}
+
+.hero h1 span{
+
+    color:var(--lime);
+}
+
+.hero p{
+
+    max-width:550px;
+    margin:1.5rem 0;
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:1rem;
+}
+
+.logo-showcase{
+
+    width:350px;
+    height:350px;
+    margin:auto;
+    border-radius:30px;
+    border:2px solid var(--lime);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:8rem;
+    color:var(--lime);
+    box-shadow:
+    0 0 30px rgba(198,255,0,.3);
+}
+
+/* FEATURES */
+
+.features{
+
+    padding:4rem 8%;
+    display:grid;
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:1.5rem;
+}
+
+/* ABOUT */
+
+.about{
+
+    padding:6rem 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    align-items:center;
+}
+
+.about img{
+
+    width:100%;
+    border-radius:20px;
+}
+
+.about h2{
+
+    font-size:3rem;
+}
+
+.about h2 span{
+
+    color:var(--lime);
+}
+
+/* STATS */
+
+.stats{
+
+    padding:4rem 8%;
+    display:grid;
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:2rem;
+}
+
+.stat{
+
+    background:var(--card);
+    text-align:center;
+    padding:2rem;
+    border-radius:15px;
+}
+
+.stat h3{
+
+    color:var(--lime);
+    font-size:3rem;
+}
+
+/* PARTNERS */
+
+.partners{
+
+    padding:5rem 8%;
+}
+
+.partner-grid{
+
+    display:grid;
+    grid-template-columns:
+    repeat(5,1fr);
+    gap:1rem;
+}
+
+.partner-grid span{
+
+    background:var(--card);
+    padding:1.5rem;
+    text-align:center;
+    border-radius:10px;
+}
+
+}

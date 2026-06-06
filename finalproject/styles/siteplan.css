@@ -1,0 +1,177 @@
+/* --------------------
+   GOOGLE FONTS
+-------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --------------------
+   RESET
+-------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#121212;
+    color:#ffffff;
+    font-family:"Segoe UI",sans-serif;
+    line-height:1.7;
+}
+
+/* --------------------
+   CONTAINER
+-------------------- */
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* --------------------
+   HEADER
+-------------------- */
+
+header{
+    background:#1D1D1D;
+    padding:2rem 0;
+    border-bottom:3px solid #C6FF00;
+    text-align:center;
+}
+
+header h1{
+    font-family:"Poppins",sans-serif;
+    color:#C6FF00;
+    font-size:2.5rem;
+}
+
+.subtitle{
+    color:#cccccc;
+    margin-top:.5rem;
+}
+
+/* --------------------
+   SECTIONS
+-------------------- */
+
+section{
+    background:#1D1D1D;
+    margin:2rem 0;
+    padding:2rem;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+h2{
+    color:#C6FF00;
+    font-family:"Poppins",sans-serif;
+    margin-bottom:1rem;
+    border-left:5px solid #C6FF00;
+    padding-left:12px;
+}
+
+h3{
+    margin-bottom:1rem;
+    color:#ffffff;
+}
+
+p{
+
+    margin-bottom:1rem;
+}
+
+/* --------------------
+   LISTS
+-------------------- */
+
+ul{
+
+    margin-left:20px;
+}
+
+li{
+
+    margin-bottom:.8rem;
+}
+
+/* --------------------
+   TABLE
+-------------------- */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:1rem;
+}
+
+th{
+    background:#C6FF00;
+    color:#121212;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border:1px solid #333;
+}
+
+tr:nth-child(even){
+
+    background:#252525;
+}
+
+/* --------------------
+   WIREFRAME
+-------------------- */
+
+pre{
+    background:#0d0d0d;
+    padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+    font-family:"JetBrains Mono",monospace;
+    border:1px solid #333;
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+footer{
+    background:#1D1D1D;
+    text-align:center;
+    padding:1.5rem;
+    border-top:3px solid #C6FF00;
+    margin-top:3rem;
+}
+
+/* --------------------
+   RESPONSIVE
+-------------------- */
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:2rem;
+    }
+
+    section{
+
+        padding:1.5rem;
+    }
+
+    table{
+
+        font-size:.9rem;
+    }
+
+    pre{
+
+        font-size:.75rem;
+    }
+
+}
