@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Aba City with the Chamber of Commerce — landmarks, culture, and opportunities.">
+  <meta name="author" content="Ikechi David Chisom">
+  <title>Discover Aba City Chamber of Commerce</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Discover Aba City Chamber of Commerce">
+  <meta property="og:description" content="Explore Aba City — culture, landmarks, and opportunities with the Chamber of Commerce.">
+  <meta property="og:image" content="https://ikechidavidchisom.github.io/wdd231/chamber/images/social-preview-discover.jpg">
+  <meta property="og:url" content="https://ikechidavidchisom.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/discover-small.css">
+  <link rel="stylesheet" href="styles/discover-medium.css">
+  <link rel="stylesheet" href="styles/discover-large.css">
+
+  <!-- Scripts -->
+  <script type="module" src="scripts/discover.js"></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <a href="index.html">
+        <img src="images/logo.svg" alt="Site Logo">
+        <span>Aba City Chamber of Commerce</span>
+      </a>
+    </div>
+
+    <nav id="primaryNav">
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Explore Directory</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Aba City</h1>
+    
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <span class="title-box">Discover</span>
+      <a href="index.html" class="link-box home">Home</a>
+      <a href="discover.html" class="link-box discover">Discover</a>
+      <a href="join.html" class="link-box join-now">Join</a>
+      <a href="directory.html" class="link-box directory">Explore Directory</a>
+    </section>
+
+    <!-- Visitor Message -->
+    <section id="visitor-message"></section>
+
+    <!-- Discover Grid -->
+    <section id="discover"></section>
+
+    <!-- Modal -->
+<dialog id="infoModal">
+  <h2 id="modalTitle"></h2>
+  <figure>
+    <img id="modalImage" alt="">
+  </figure>
+  <address id="modalAddress"></address>
+  <p id="modalDescription"></p>
+  <button id="closeModal">Close</button>
+</dialog>
+
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:ikechidavid62@gmail.com">ikechidavid62@gmail.com</a> | 
+      Phone: <a href="tel:+2348138907538">+2348138907538</a></p>
+    <p>Developed by Ikechi David Chisom | WDD 231</p>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

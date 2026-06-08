@@ -12,24 +12,7 @@
     flex-direction: column; /* keep vertical flow */
     gap: 2rem;
   }
-
-  .join-layout {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .join h1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0rem;
-    margin: 1rem 0;
-  }
-
+  
   .title-box {
     background: none;
     color: #0f0f0f;
@@ -50,7 +33,6 @@
   .link-box:hover {
     cursor: pointer;
     background: #336da8;
-    color: #fff;
     transform: translateY(-3px);
   }
 
@@ -61,15 +43,15 @@
     background: #042c55;
   }
 
-  .link-box.join-now {
-  background: #e1e5ec;
-  color: #042c55;
+  .link-box.discover {
+    background: #ced0d3;
   }
 
   .link-box.home:hover,
   .link-box.discover:hover,
   .link-box.directory:hover {
     background: #4469ad;
+    color: #fff;
   }
 
   .branding {
@@ -91,38 +73,43 @@
     color: #fff;
   }
 
-  .hero-img {
-    height: 500px;
+  
+  /* ===== Discover Grid for Large Screens ===== */
+  #discover {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+      "card1 card2" 
+      "card3 card4"
+      "card5 card6" 
+      "card7 card8";
   }
 
-  .hero-text h2 {
-    font-size: 2.5rem;
-  }
-
-  .hero-text p {
-    font-size: 1.2rem;
-  }
-
-  /* Layout for join page */
-  section {
-    flex: 1;
-  }
-
-  form {
-    flex: 2;
-  }
-
-  .membership-cards {
-    flex: 1;
-    flex-direction: column;
-  }
+  .card:nth-child(1) { grid-area: card1; }
+  .card:nth-child(2) { grid-area: card2; }
+  .card:nth-child(3) { grid-area: card3; }
+  .card:nth-child(4) { grid-area: card4; }
+  .card:nth-child(5) { grid-area: card5; }
+  .card:nth-child(6) { grid-area: card6; }
+  .card:nth-child(7) { grid-area: card7; }
+  .card:nth-child(8) { grid-area: card8; }
 
   .card {
-    width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  footer {
-  display: flex;
-  flex-direction: row;
+  .card img:hover {
+    filter: brightness(0.85);
+    transform: scale(1.05);
+  }
+
+.card img {
+  width: 100%;
+
+}
+footer {
+    display: flex;
+    flex-direction: row;
   }
 }

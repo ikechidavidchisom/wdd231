@@ -75,7 +75,6 @@ h1 {
   font-size: 1.5rem;
 }
 
-
 /* Breadcrumb links */
 .breadcrumb {
   display: flex;
@@ -97,13 +96,14 @@ h1 {
 
 .breadcrumb .link-box:hover {
   background: #4469ad;
-  color: #fff;
+  color:#fff;
   transform: translateY(-3px);
 }
 
-.link-box.join-now {
-  background: #4469ad;
-  }
+.link-box.discover {
+  background: #e7ecf1;
+  color: #1d1d1d;
+}
 
 /* ===== Main Layout ===== */
 main {
@@ -111,6 +111,71 @@ main {
   flex-direction: column;
   gap: 1rem;
   margin: 1rem;
+}
+
+/* ===== Discover Grid (Small Screens) ===== */
+#discover {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #004080;
+  font-size: 1.2rem;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #2e7fcf;
 }
 
 /* ===== Form ===== */
@@ -210,24 +275,26 @@ form input[type="submit"]:hover {
   color: #960518;
 }
 
-/* ===== Modals ===== */
 dialog {
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 1.5rem;
-  max-width: 400px;
+  max-width: 500px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 dialog::backdrop {
-  background: #000;
+  background: rgba(0,0,0,0.6);
 }
 
-dialog h4 {
-  margin-top: 0;
-  color: #004080;
+#infoModal img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 6px;
 }
 
-dialog button.close {
+#closeModal {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background: #004080;
@@ -235,6 +302,10 @@ dialog button.close {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#closeModal:hover {
+  background: #2e7fcf;
 }
 
 /* ===== Footer ===== */
