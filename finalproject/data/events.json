@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Frontend Workshop",
+    "description": "Learn HTML, CSS and JavaScript from experienced developers.",
+    "date": "July 10, 2026",
+    "icon": "fas fa-laptop-code"
+  },
+  {
+    "title": "Networking Meetup",
+    "description": "Meet founders, mentors and industry professionals.",
+    "date": "July 18, 2026",
+    "icon": "fas fa-users"
+  },
+  {
+    "title": "Aba Tech Hackathon 2026",
+    "description": "Collaborate to solve real-world challenges.",
+    "date": "July 25, 2026",
+    "icon": "fas fa-rocket",
+    "featured": true
+  },
+  {
+    "title": "Startup Pitch Night",
+    "description": "Present your ideas and gain valuable feedback.",
+    "date": "August 2, 2026",
+    "icon": "fas fa-lightbulb"
+  },
+  {
+    "title": "AI Bootcamp",
+    "description": "Dive into machine learning and AI fundamentals.",
+    "date": "August 15, 2026",
+    "icon": "fas fa-brain"
+  },
+  {
+    "title": "Cybersecurity Workshop",
+    "description": "Learn how to protect systems and data.",
+    "date": "August 22, 2026",
+    "icon": "fas fa-shield-alt"
+  },
+  {
+    "title": "Cloud Computing Seminar",
+    "description": "Explore AWS, Azure, and Google Cloud.",
+    "date": "September 5, 2026",
+    "icon": "fas fa-cloud"
+  },
+  {
+    "title": "Mobile App Development",
+    "description": "Build Android and iOS apps with Flutter.",
+    "date": "September 12, 2026",
+    "icon": "fas fa-mobile-alt"
+  },
+  {
+    "title": "Data Science Meetup",
+    "description": "Discuss trends in data analytics and visualization.",
+    "date": "September 19, 2026",
+    "icon": "fas fa-chart-line"
+  },
+  {
+    "title": "Blockchain Basics",
+    "description": "Understand blockchain technology and smart contracts.",
+    "date": "October 3, 2026",
+    "icon": "fas fa-link"
+  },
+  {
+    "title": "UI/UX Design Workshop",
+    "description": "Learn design principles and prototyping tools.",
+    "date": "October 10, 2026",
+    "icon": "fas fa-pencil-ruler"
+  },
+  {
+    "title": "Game Development Jam",
+    "description": "Create fun games in Unity.",
+    "date": "October 24, 2026",
+    "icon": "fas fa-gamepad"
+  },
+  {
+    "title": "IoT Innovation Summit",
+    "description": "Explore Internet of Things applications.",
+    "date": "November 7, 2026",
+    "icon": "fas fa-wifi"
+  },
+  {
+    "title": "Tech Career Fair",
+    "description": "Meet recruiters and explore job opportunities.",
+    "date": "November 14, 2026",
+    "icon": "fas fa-briefcase"
+  },
+  {
+    "title": "Year-End Gala",
+    "description": "Celebrate achievements and network with peers.",
+    "date": "December 12, 2026",
+    "icon": "fas fa-glass-cheers"
+  }
+]

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Connect with developers, entrepreneurs, designers, and tech enthusiasts who are passionate about building solutions, sharing knowledge, and creating opportunities through technology.">
+    <meta name="author" content="David Chisom Ikechi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join - Aba Tech Innovators Club</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-small.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    rel="stylesheet">
+
+    <!--scripts-->
+    <script src="scripts/final.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/join-modal.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            
+            <button class="hamburger" aria-label="Menu">☰</button>
+
+            <div class="logo">
+                <img src="images/final-logo.png" alt="Aba Tech Innovators Club Logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                
+            </ul>
+
+            <a href="join.html" class="btn-primary">Join Us Now</a>
+        </nav>
+    </header>
+
+<main>
+
+    <section class="join-hero">
+
+        <div class="join-hero-content">
+
+            <span class="tag">
+                JOIN • LEARN • INNOVATE
+            </span>
+
+            <h1>
+                Become Part of the <span>Aba Tech Innovators Club</span>
+            </h1>
+
+            <p>
+                Connect with developers, entrepreneurs, designers, and tech enthusiasts who are passionate about building solutions, sharing knowledge, and creating opportunities through technology.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="membership-benefits">
+
+        <h2>Why Join Us?</h2>
+
+        <div class="benefits-grid">
+
+            <article class="benefit-card">
+                <i class="fas fa-users"></i>
+                <h3>Networking</h3>
+                <p>
+                    Meet fellow innovators, entrepreneurs, and professionals in the technology ecosystem.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Workshops</h3>
+                <p>
+                    Participate in coding workshops, bootcamps, and hands-on training sessions.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>
+                    Collaborate on projects that solve real-world problems in your community.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="join-form-section">
+
+        <div class="form-container">
+
+            <h2>Membership Application</h2>
+
+            <form class="join-form">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your E-mail address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Membership Category *</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select Category</option>
+                        <option>Student</option>
+                        <option>Developer</option>
+                        <option>Entrepreneur</option>
+                        <option>Designer</option>
+                        <option>Technology Enthusiast</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Why would you like to join? *</label>
+                    <textarea id="interest" name="interest" rows="5" placeholder="Enter your reason here" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Application</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Membership cards -->
+    <section class="membership-levels">
+      <h2>Membership Categories</h2>
+      <div class="membership-cards">
+        <div class="card">
+          <h3>Student</h3>
+          <a href="#npModal">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Developer</h3>
+          <a href="#bronzeModal">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Entrepreneur</h3>
+          <a href="#silverModal">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Designer</h3>
+          <a href="#goldModal">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Technology Enthusiast</h3>
+          <a href="#diamondModal">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+    <!-- Modals -->
+    <dialog id="npModal">
+        <h4>Student Benefits</h4>
+        <p>No fee, access to networking events, community support.</p>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="bronzeModal">
+        <h4>Developer Benefits</h4>
+        <p>Basic training sessions, event discounts, directory listing.</p>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="silverModal">
+        <h4>Entrepreneur Benefits</h4>
+        <p>Advertising opportunities, spotlight positions, extended discounts.</p>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="goldModal">
+        <h4>Designer Benefits</h4>
+        <p>Premium events, full advertising package, maximum discounts.</p>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="diamondModal">
+        <h4>Technology Enthusiast Benefits</h4>
+        <p>Premium events, full advertising package, maximum discounts.</p>
+        <button class="close">Close</button>
+    </dialog>
+
+</main>
+
+    <footer>
+        <div class="social">
+        <a href="https://ikechidavidchisom.github.io/wdd231" target="_blank">
+            <img src="images/github.png" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/ikechidavid" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/ikechidavid" target="_blank">
+            <img src="images/twitter.png" alt="Twitter">
+        </a>
+
+        </div>
+        <p>&copy; <span id="year"></span> David Chisom Ikechi | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
