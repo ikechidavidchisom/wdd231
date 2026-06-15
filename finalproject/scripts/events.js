@@ -1,7 +1,7 @@
 // scripts/events.js
 
 async function fetchEvents() {
-  const eventsUrl = "data/events.json"; // Path to your JSON file
+  const eventsUrl = "data/events.json"; // Path to the JSON file
 
   try {
     const response = await fetch(eventsUrl);
@@ -61,7 +61,7 @@ function displayEventGrid(events) {
   gridContainer.innerHTML = "";
 
   events.forEach(event => {
-    // Skip featured event in grid
+    // Skipping featured event in grid
     if (event.featured) return;
 
     const article = document.createElement("article");
