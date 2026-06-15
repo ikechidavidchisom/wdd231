@@ -83,7 +83,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo img {
   height: 100px;
 }
@@ -100,9 +105,18 @@ header {
 .nav-links a:hover {
   color: var(--lime);
 }
+
+.nav-links a.active {
+  color: var(--lime); /* highlight color */
+  font-weight: 600;
+  border-bottom: 2px solid var(--lime); /* optional underline */
+}
+
 nav ul li {
   margin: 0 10px;
 }
+
+
 
 /* FEATURES */
 .feature-card {
