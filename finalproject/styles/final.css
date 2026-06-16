@@ -38,7 +38,7 @@ body {
 }
 
 /* BUTTONS */
-.btn-primary {
+.button-primary {
   display: inline-block;
   background: var(--lime);
   color: #111;
@@ -48,13 +48,13 @@ body {
   font-weight: 600;
   transition: var(--transition);
 }
-.btn-primary:hover {
+.button-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 15px var(--lime),
               0 0 30px rgba(198,255,0,.4);
 }
 
-.btn-secondary {
+.button-secondary {
   display: inline-block;
   color: var(--white);
   text-decoration: none;
@@ -62,7 +62,7 @@ body {
   padding: 14px 28px;
   border-radius: 10px;
 }
-.btn-secondary:hover {
+.button-secondary:hover {
   background: rgba(198,255,0,.1);
 }
 
@@ -75,7 +75,7 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
-.navbar {
+.navig-bar {
   max-width: 1200px;
   margin: auto;
   padding: 1rem 5%;
@@ -139,6 +139,11 @@ nav ul li {
   color: var(--lime);
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.event-list h2{
+  margin: 0 4rem ;
+  color: #C6FF00;
 }
 
 .partner-grid span{

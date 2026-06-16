@@ -39,7 +39,7 @@
 <body>
 
 <header>
-    <nav class="navbar">
+    <nav class="navig-bar">
         <button class="hamburger" aria-label="Menu">☰</button>
         <div class="logo">
             <img src="images/final-logo.png" alt="Aba Tech">
@@ -50,7 +50,7 @@
             <li><a href="events.html" class="active">Events</a></li>
             <li><a href="join.html">Join Us</a></li>
         </ul>
-        <a href="join.html" class="btn-primary">Join Us Now</a>
+        <a href="join.html" class="button-primary">Join Us Now</a>
     </nav>
 </header>
 
@@ -66,18 +66,21 @@
     </section>
 
     <!-- Event cards will be injected dynamically -->
-    <section class="event-grid" id="event-grid"></section>
+     <section class="event-list">
+        <h2>Events</h2>
+        <div class="event-grid" id="event-grid"></div>
+    </section>
 
     <!-- Timeline will be injected dynamically -->
     <section class="timeline">
         <h2>Event Calendar</h2>
-        <div id="timeline"></div>
+        <div class="timeline-calendar" id="timeline"></div>
     </section>
 
     <section class="cta">
         <h2>Ready to Join Our Next Event?</h2>
         <p>Become part of a growing community of innovators and creators.</p>
-        <a href="join.html" class="btn-primary">Become a member</a>
+        <a href="join.html" class="button-primary">Become a member</a>
     </section>
 </main>
 

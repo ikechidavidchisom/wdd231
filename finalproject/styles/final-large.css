@@ -51,8 +51,7 @@ display: none;
 .features{
     padding:4rem 8%;
     display:grid;
-    grid-template-columns:
-    repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap:1.5rem;
 }
 
@@ -82,8 +81,7 @@ display: none;
 .stats{
     padding:4rem 8%;
     display:grid;
-    grid-template-columns:
-    repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap:2rem;
 }
 
@@ -146,15 +144,16 @@ display: none;
     gap:1rem;
 }
 
-.timeline{
+.timeline-calendar {
     padding:3rem 5%;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .timeline h2{
     color:var(--lime);
+    margin: 0 4rem;
 }
 
 .cta{

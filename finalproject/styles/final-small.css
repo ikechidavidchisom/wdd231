@@ -4,7 +4,7 @@
 @media (max-width:768px){
 
   /* NAVIGATION */
-  .navbar {
+  .navig-bar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -120,7 +120,7 @@
     font-size: 1.6rem; 
 }
 
-  .cta .btn-primary { 
+  .cta .button-primary { 
     width: 100%; 
 }
 

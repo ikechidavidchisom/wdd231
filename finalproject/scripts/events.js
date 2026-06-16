@@ -47,7 +47,7 @@ function displayFeaturedEvent(events) {
         <li>Venue: Aba Tech Innovation Hub</li>
         <li>Time: 9:00 AM</li>
       </ul>
-      <a href="join.html" class="btn-primary">Register Now</a>
+      <a href="join.html" class="button-primary">Register Now</a>
     `;
   } else {
     featuredContainer.innerHTML = `<p>No featured event available.</p>`;
